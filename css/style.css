@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.hero__block {
+    width: 100%;
+    height: 646px;
+    background-image: url("../images/ban-image.png");
+    background-repeat: no-repeat;
+}
+
+.hero__content {
+    padding-top: 218px;
+}
+
+.hero__title {
+    font-size: 64px;
+    line-height: 89.6px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.hero__description {
+    font-size: 32px;
+    line-height: 51.2px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.news {
+    padding-top: 54px;
+}
+
+.news__title {
+    font-size: 64px;
+    line-height: 89.6px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.news__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 40px;
+}
+
+.news__block { 
+    position: relative; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.news__block:hover .news__subtitle { 
+    color: #841844; 
+}
+
+.news__block:hover .news__button { 
+    background-color: #841844; 
+    color: #ffffff; 
+}
+
+.news__date {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 21.79px;
+    font-weight: 400;
+    color: #6C6E7B;
+    background: #ECF2F5;
+    padding: 6px 18px;
+    border-radius: 20px;
+}
+
+.news__subtitle {
+    font-size: 32px;
+    line-height: 43.58px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.news__text {
+    max-width: 662px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+    margin: 30px 0;
+}
+
+.news__button {
+    display: inline-block;
+    padding: 16px 41px;
+    text-decoration: none;
+    color: #841844;
+    border: 2px solid #9B407A;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination {
+    padding: 84px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.pagination__btn {
+    font-size: 16px;
+    line-height: 21.79px;
+    font-weight: 600;
+    color: #9B407A;
+    padding: 16px 24px;
+    border: 2px solid #841844;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination__btn.active {
+    background-color: #841844;
+    color: #FFFFFF;
+    border-color: #841844; /* Убедитесь, что граница также меняется на цвет фона */
+}
+
+.pagination__next {
+    padding: 16px 41px;
+    border: 2px solid #841844;
+    border-radius: 50px;
+}
+
+.footer__border {
+    width: 100%;
+    border-top: 1px solid #6C6E7B;
+}
+
+.footer__text {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+    padding: 64px 0;
+}
